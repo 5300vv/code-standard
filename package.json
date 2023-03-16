@@ -2,6 +2,12 @@
     "name": "code-standard",
     "version": "1.0.0",
     "description": "",
+    "scripts": {
+        "lint": "npx eslint --ext .js,.ts,.jsx,.tsx .",
+        "lint:fix": "npx eslint --fix --ext .js,.ts,.jsx,.tsx .",
+        "stylelint:fix": "stylelint \"./**/*.{css,scss}\" --fix",
+        "prettier": "prettier --write '**/*.{js,ts,jsx,tsx,scss,md,json}'"
+    },
     "dependencies": {},
     "devDependencies": {
         "@babel/core": "^7.21.3",
@@ -14,6 +20,12 @@
         "postcss": "^8.4.21",
         "prettier": "^2.8.4",
         "sass": "^1.59.3",
+        "standard-version": "^9.5.0",
+        "stylelint": "^15.2.0",
+        "stylelint-config-prettier": "^9.0.5",
+        "stylelint-config-recommended-scss": "^9.0.1",
+        "stylelint-config-standard": "^30.0.1",
+        "stylelint-order": "^6.0.3",
         "vue-eslint-parser": "^9.1.0"
     }
 }
