@@ -14,9 +14,7 @@ export default {
             title: 'Hello',
         }
     },
-    onLoad() {
-        console.log(abc)
-    },
+    onLoad() {},
     methods: {},
 }
 </script>
