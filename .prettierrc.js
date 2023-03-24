@@ -46,5 +46,5 @@ module.exports = {
     importOrder: [],
     importOrderSeparation: false,
     importOrderSortSpecifiers: true,
-    pluginSearchDirs: false,
+    pluginSearchDirs: [],
 }
