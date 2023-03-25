@@ -7,27 +7,21 @@
     </view>
 </template>
 
-<script> 
-export default {  
+<script>
+export default {
     data() {
-<<<<<<< HEAD
-		return {} 
-    }, 
-	onLoad() {},
-=======
         return {
             title: 'Hello',
         }
     },
     onLoad() {},
->>>>>>> 5923a5f98c16a5e672226119103ce049fb4058ea
     methods: {},
 }
 </script>
 
 <style lang="scss" scoped>
 .content {
-	display: flex;
+    display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
