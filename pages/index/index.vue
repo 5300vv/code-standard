@@ -10,9 +10,17 @@
 <script> 
 export default {  
     data() {
+<<<<<<< HEAD
 		return {} 
     }, 
 	onLoad() {},
+=======
+        return {
+            title: 'Hello',
+        }
+    },
+    onLoad() {},
+>>>>>>> 5923a5f98c16a5e672226119103ce049fb4058ea
     methods: {},
 }
 </script>

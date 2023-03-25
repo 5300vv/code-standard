@@ -6,17 +6,43 @@
         "lint": "npx eslint --ext .js,.ts,.jsx,.tsx .",
         "lint:fix": "npx eslint --fix --ext .js,.ts,.jsx,.tsx .",
         "stylelint:fix": "stylelint \"./**/*.{css,scss}\" --fix",
-        "prettier": "prettier --write '**/*.{js,ts,jsx,tsx,scss,md,json}'"
+        "prettier": "prettier --write '**/*.{js,ts,jsx,tsx,scss,md,json}'",
+        "prepare": "husky install",
+        "commit": "git-cz"
+    },
+    "husky": {
+        "hooks": {
+            "commit-msg": "commitlint -E HUSKY_GIT_PARAMS"
+        }
+    },
+    "lint-staged": {
+        "*.{js,ts,jsx,tsx}": [
+            "npm run lint"
+        ],
+        "*.{css,scss}": [
+            "npm run stylelint:fix"
+        ]
+    },
+    "config": {
+        "commitizen": {
+            "path": "node_modules/cz-conventional-changelog"
+        }
     },
     "dependencies": {},
     "devDependencies": {
         "@babel/core": "^7.21.3",
         "@babel/eslint-parser": "^7.21.3",
+        "@commitlint/cli": "^17.5.0",
+        "@commitlint/config-conventional": "^17.4.4",
         "autoprefixer": "^10.4.14",
+        "commitizen": "^4.3.0",
+        "cz-conventional-changelog": "^3.3.0",
         "eslint": "^8.36.0",
         "eslint-config-alloy": "^4.9.0",
         "eslint-config-prettier": "^8.7.0",
         "eslint-plugin-vue": "^9.9.0",
+        "husky": "^8.0.3",
+        "lint-staged": "^13.2.0",
         "postcss": "^8.4.21",
         "postcss-html": "^1.5.0",
         "prettier": "^2.8.4",
