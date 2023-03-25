@@ -7,19 +7,19 @@
     </view>
 </template>
 
-<script>
-export default {
+<script> 
+export default {  
     data() {
-        return {}
-    },
-    onLoad() {},
+		return {} 
+    }, 
+	onLoad() {},
     methods: {},
 }
 </script>
 
 <style lang="scss" scoped>
 .content {
-    display: flex;
+	display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
